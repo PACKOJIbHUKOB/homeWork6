@@ -11,12 +11,12 @@ public class Main {
         task10();}
     private static void task1() {
         System.out.println("задача  1, цикл i");
-        for(int i =0; i<10;i=i+1){
+        for(int i =1; i<=10;i=i+1){
             System.out.println(i);}
     }
     private static void task2() {
         System.out.println("задача 2, цикл a");
-        for (int a = 10; a>0; a--){
+        for (int a = 10; a>=1; a--){
             System.out.println(+a);}
     }
     private static void task3() {
