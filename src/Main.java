@@ -6,7 +6,9 @@ public class Main {
         task5();
         task6();
         task7();
-        task8();}
+        task8();
+        task9();
+        task10();}
     private static void task1() {
         System.out.println("задача  1");
         for(int i =0; i<10;i=i+1){
@@ -23,17 +25,45 @@ public class Main {
             System.out.println("цикл b "+b);}
     }
     private static void task4() {
-        System.out.println("задача 4");}
-
+        System.out.println("задача 4");
+        for(int c = 10; c >=-10;c--){
+            System.out.println("цикл c "+c);}
+    }
     private static void task5() {
-        System.out.println("задача 5");}
-
+        System.out.println("задача 5");
+        for(int year = 1904;year<=2096;year+=4){
+            System.out.println(year+ "год является високосным");}
+    }
     private static void task6() {
-        System.out.println("задача 6");}
-
+        System.out.println("задача 6");
+        for (int num =7; num<=98; num+=7){
+            System.out.print(num +" ");
+        }
+    }
     private static void task7() {
-        System.out.println("задача 7");}
+        System.out.println(" ");
+        System.out.println("задача 7");
+        for (int num =1; num<=512; num*=2){
+            System.out.print(num +" ");}
+        }
 
     private static void task8() {
-        System.out.println("задача 8");}
+        System.out.println(" ");
+        System.out.println("задача 8");
+        int delay = 29000;
+        int accumulated = 0;
+        for (int i = 1; i <=12; i++) {
+            accumulated = accumulated + delay;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + accumulated + " рублей».");
+        }
+    }
+
+    private static void task9() {
+        System.out.println("задача 9");
+    }
+
+    private static void task10() {
+        System.out.println("задача 10");
+
+    }
 }
