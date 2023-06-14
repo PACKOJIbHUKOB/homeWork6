@@ -10,24 +10,24 @@ public class Main {
         task9();
         task10();}
     private static void task1() {
-        System.out.println("задача  1");
+        System.out.println("задача  1, цикл i");
         for(int i =0; i<10;i=i+1){
-            System.out.println("цикл i "+i );}
+            System.out.println(i);}
     }
     private static void task2() {
-        System.out.println("задача 2");
+        System.out.println("задача 2, цикл a");
         for (int a = 10; a>0; a--){
-            System.out.println("цикл a "+a);}
+            System.out.println(+a);}
     }
     private static void task3() {
-        System.out.println("задача 3");
+        System.out.println("задача 3, цикл b ");
         for(int b = 0; b<17;b+=2){
-            System.out.println("цикл b "+b);}
+            System.out.println(b);}
     }
     private static void task4() {
-        System.out.println("задача 4");
+        System.out.println("задача 4, цикл c ");
         for(int c = 10; c >=-10;c--){
-            System.out.println("цикл c "+c);}
+            System.out.println(c);}
     }
     private static void task5() {
         System.out.println("задача 5");
@@ -46,7 +46,6 @@ public class Main {
         for (int num =1; num<=512; num*=2){
             System.out.print(num +" ");}
         }
-
     private static void task8() {
         System.out.println(" ");
         System.out.println("задача 8");
@@ -57,13 +56,22 @@ public class Main {
             System.out.println("Месяц " + i + ", сумма накоплений равна " + accumulated + " рублей».");
         }
     }
-
     private static void task9() {
         System.out.println("задача 9");
+        int delay = 29000;
+        int accumulated = 0;
+        for (int i = 1; i <= 12; i++) {
+            delay *= 1.01;
+            accumulated = accumulated + delay;
+            System.out.println("Месяц " + i + ", сумма накоплений равна " + accumulated + " рублей».");
+        }
     }
-
     private static void task10() {
         System.out.println("задача 10");
-
+        int num = 2;
+        for (int i = 1; i <= 10; i++){
+           int total = num*i;
+            System.out.println(num+"*"+i+"="+total);
+        }
     }
 }
